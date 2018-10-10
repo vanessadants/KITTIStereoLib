@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkitti_cloud_generator.a  CMakeFiles/kitti_cloud_generator.dir/kitti_cloud_generator.cpp.o
+/usr/bin/ranlib libkitti_cloud_generator.a

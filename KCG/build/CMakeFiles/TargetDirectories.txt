@@ -1,0 +1,4 @@
+/home/vanessadantas/Music/KITTIStereoLib/KCG/build/CMakeFiles/rebuild_cache.dir
+/home/vanessadantas/Music/KITTIStereoLib/KCG/build/CMakeFiles/edit_cache.dir
+/home/vanessadantas/Music/KITTIStereoLib/KCG/build/CMakeFiles/project.dir
+/home/vanessadantas/Music/KITTIStereoLib/KCG/build/CMakeFiles/kitti_cloud_generator.dir

@@ -19,20 +19,22 @@ class KITTIStereoLoader
 private:
 	Mat leftImage;
 	Mat rightImage;
- 	
+	std::string s_path;
+	int nextL=0;
+ 	int nextR=0;
 	std::vector<std::string> leftImageNameList;
 	std::vector<std::string> rightImageNameList; //Lista de strings >> Imitar codigo git
     
 public:
 	KITTIStereoLoader();
 	void loaderImage(string left_path,string right_path);
-	void loaderImageSequence(string sequence_path,int start_sequence_num,int stop_sequence_num);
+	void loaderImageSequence(string sequence_path,int sequence_num);
 	//void loaderLidarCloud(string lidar_path);
 	//void loaderLidarCloudSequence(string lidar_path,int start_sequence_num,int stop_sequence_num);
     Mat getLeftImage();
     Mat getRightImage();
-    vector<string> getLeftSequence(); //2 primeiros digitos = numero da sequencia, 6 ultimos digitos = numero da imagem.
-    vector<string> getRightSequence();
+    Mat getNextLeftSequence(); //2 primeiros digitos = numero da sequencia, 6 ultimos digitos = numero da imagem.
+    Mat getNextRightSequence();
 
     ~KITTIStereoLoader();
 
